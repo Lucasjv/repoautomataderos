@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 
-header{
+.header{
     background: rgb(2,0,36);
 background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
 background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
@@ -19,6 +19,7 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
 
 .header__item{
     list-style: none;
+    color: aliceblue;
 
 }
 
@@ -40,10 +41,9 @@ h1{
 
 
 .header__menu{ 
-  
+  color: aliceblue;
     display: flex;
     gap: 30px;
-    background-color: cadetblue;
     align-items: center;
     list-style: none;
     flex-direction: row;
@@ -55,10 +55,16 @@ h1{
 
 
 
-
 .imagen{
     position: relative;
-  
+}
+
+.imagen--maverick{
+    position: relative; 
+  top: 4%;
+  left: 4%;
+
+}
 
 }
 
@@ -83,11 +89,11 @@ main{
   
 }
 
-aside{
-    background-color: darkgrey;
+.aside{
+    background-color: cadetblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-footer{
+.footer{
     background-color: aliceblue;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
@@ -104,6 +110,7 @@ footer{
 
 .NuestroTaller{
     text-decoration: blue;
+    background-color: darkgray;
     font-size: 2rem;
     }
 

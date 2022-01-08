@@ -1,0 +1,21 @@
+       <img class="header__logoam" src="./assets/logo.svg.png" alt="logo automotores mataderos" width="180" height="70">
+        <nav class="header__inline">
+            <ul class="header__menu">
+                <li class="menu__item"><a href="#">Home</a></li>
+                <li class="header__item"><a href="./secciones/El_taller.html">El Taller</a></li>
+                <li class="header__item"><a href="./secciones/Service_oficial.html">Service Oficial</a></li>
+                <li class="header__item"><a href="./secciones/equipamiento.html"> Equipamiento</a></li>
+                 <li class="header__item"><a href="./secciones/contacto.html">Contacto</a></li>
+                </ul>
+
+
+        </nav>
+
+        active" aria-current="page"
+
+        NUESTRO CONCESIONARIO PREMIADO
+Nos sentimos orgullosos con el desempeño de nuestro equipo, tanto el de Repuestos como el de Servicios,
+los cuales han sido varias veces premiados a lo largo de todos estos años por Ford Argentina S.C.A.
+
+Una muestra de ello es que contamos con uno de los índices más altos de "Satisfacción al Cliente"
+en la red de concesionarios.

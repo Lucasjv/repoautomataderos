@@ -4,17 +4,12 @@
     box-sizing: border-box;
 }
 
-.header{
-    background: rgb(2,0,36);
-background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
-background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
-background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
-    padding: 0px 25px 10px 0px;
-    border: solid 2px blue
-
+.gradient{
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(128deg, rgba(255,255,255,1) 27%, rgba(178,179,255,1) 52%, rgba(0,1,255,1) 97%);
+    background: -webkit-linear-gradient(128deg, rgba(255,255,255,1) 27%, rgba(178,179,255,1) 52%, rgba(0,1,255,1) 97%);
+    background: linear-gradient(128deg, rgba(255,255,255,1) 27%, rgba(178,179,255,1) 52%, rgba(0,1,255,1) 97%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#0001ff",GradientType=1);
 }
 
 .header__item{
@@ -23,15 +18,13 @@ filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endCo
 
 }
 
-h1{
-    color: blue;
+.h1{
+   font-family: Arial, Helvetica, sans-serif;
     
 }
 
 
-.logoam{
-    background-color: blue;
-}
+
 
 .inline{
     display: flex;
@@ -41,7 +34,7 @@ h1{
 
 
 .header__menu{ 
-  color: aliceblue;
+
     display: flex;
     gap: 30px;
     align-items: center;
@@ -66,6 +59,9 @@ h1{
 
 }
 
+.text-center{
+
+    text-align: center;
 }
 
 .imagen--titular{
@@ -75,15 +71,8 @@ h1{
 }
 
 
-main{
-
-    background-color: aliceblue;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-
 .garantia{
     text-transform: capitalize;
-    background-color: aliceblue;
     font-size: 15px;
     font-style: italic;
   
@@ -94,15 +83,11 @@ main{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 .footer{
-    background-color: aliceblue;
+  
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.footer__item{
-   background-color: darkgray; 
-    padding: 5px 25px 10px 25px;
-    
-}
+
 
 .contact{
     background-color: cadetblue;
@@ -114,25 +99,38 @@ main{
     font-size: 2rem;
     }
 
+    .mecanico{
+
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+    }
 .Servicios{
     background-color: darkgray;
 font-size: 25px;
 }
 
 .Servicios__medidas {
-    position: relative;
+    text-align: center;
     border: aliceblue;
     margin: 5px 5px 5px 5px;
 }
 
 .Servicios__detalle{
-    font-size: 25px;
+    text-align: center;
+    font-size: 20px;
+
 
 }
 
 .publi{
-    background-color: cadetblue;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
+    
 
 .loquehacemos{
     border: solid;
@@ -140,12 +138,18 @@ font-size: 25px;
 }
 
 .chapa{
-    position: absolute;
-    text-orientation: sideways-right;
+    position: relative;
+    text-align: center;
+    font-size: 20px;
     background-color: aliceblue;
     text-decoration-line: underline;
 }
 
+.presupuesto{
+    color: darkgray
+
+text-align: start;
+}
 .beneficios{
     line-height: 20px;
     background-color: darkgray;
@@ -218,7 +222,7 @@ font-size: 25px;
 .imgfedpat{
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
     gap: 10px 10px; 
     justify-self: center
 }
@@ -265,10 +269,10 @@ font-size: 25px;
     }
 
     .footer__logam{
-        width: 300px; height: 100px;
+   
     }
     .maps{
-       width: 250px; height: 250px;
+       width: 250px; height: 400px;
     }
 
   .mecanico{
@@ -279,6 +283,10 @@ font-size: 25px;
    
     grid-template-rows: 1fr 1fr; 
     gap: 10px 10px; 
+}
+
+.logoseg{
+    width: 150px;px; height: 100px;
 }
 
 .publi{

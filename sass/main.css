@@ -75,7 +75,7 @@
   background-color: cadetblue;
 }
 
-.NuestroTaller {
+.nuestrotaller {
   -webkit-text-decoration: blue;
           text-decoration: blue;
   background-color: darkgray;
@@ -240,6 +240,87 @@
   100% {
     -webkit-transform: scale(1);
     transform: scale(1);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .imagen--maverick {
+    width: 200px;
+    height: 100px;
+  }
+  .imagen--titular {
+    size: 25px;
+    bottom: 15px;
+    left: 250px;
+  }
+  .maps {
+    width: 250px;
+    height: 400px;
+  }
+  .mecanico {
+    width: 300px;
+    height: 250px;
+  }
+  .Servicios {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 10px 10px;
+  }
+  .logoseg {
+    width: 150px;
+    height: 100px;
+  }
+  .publi {
+    width: 250px;
+    height: 150px;
+  }
+  .imgfedpat {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  .workingman {
+    width: 400px;
+    height: 250px;
+  }
+  .acceimg {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 10px 10px;
+    grid-auto-flow: dense;
+    gap: 10px;
+  }
+  .scam {
+    width: 400px;
+    height: 250px;
+  }
+  .workingguy {
+    width: 400px;
+    height: 250px;
+  }
+  .Servicios {
+    font-size: 12px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    gap: 10px 10px;
+  }
+  .Servicios__detalle {
+    font-size: 15px;
   }
 }
 /*# sourceMappingURL=main.css.map */

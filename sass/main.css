@@ -70,4 +70,176 @@
 .footer {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+
+.contact {
+  background-color: cadetblue;
+}
+
+.NuestroTaller {
+  -webkit-text-decoration: blue;
+          text-decoration: blue;
+  background-color: darkgray;
+  font-size: 2rem;
+}
+
+.mecanico {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.Servicios {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 10px 10px;
+  background-color: darkgray;
+  font-size: 25px;
+}
+
+.Servicios__medidas {
+  text-align: center;
+  border: aliceblue;
+  margin: 5px 5px 5px 5px;
+}
+
+.Servicios__detalle {
+  text-align: center;
+  font-size: 20px;
+}
+
+.publi {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.loquehacemos {
+  border: solid;
+  background-color: darkgray;
+}
+
+.chapa {
+  position: relative;
+  text-align: center;
+  font-size: 20px;
+  background-color: aliceblue;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.presupuesto {
+  color: darkgray;
+  text-align: start;
+}
+
+.beneficios {
+  line-height: 20px;
+  background-color: darkgray;
+  text-justify: auto;
+  border: solid;
+  border-color: blue;
+}
+
+.prices {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.links {
+  border: darkslategrey;
+}
+
+.links__item {
+  -webkit-text-decoration-color: blue;
+          text-decoration-color: blue;
+  background-color: cornflowerblue;
+}
+
+.accedetail {
+  border: solid;
+  background-color: aliceblue;
+}
+
+.accedetail__title {
+  background-color: darkgray;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.info {
+  background-color: aquamarine;
+  -webkit-text-decoration-style: solid;
+          text-decoration-style: solid;
+  text-anchor: start;
+}
+
+.sensores {
+  background-color: darkgray;
+}
+
+.form {
+  background-color: lightgrey;
+}
+
+.main__subtitle {
+  position: relative;
+  background-color: lightgrey;
+}
+
+.acceimg {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  grid-auto-flow: dense;
+  gap: 10px;
+}
+
+.imgfedpat {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 10px 10px;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.scale-up-center {
+  -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@-webkit-keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-up-center {
+  0% {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
 /*# sourceMappingURL=main.css.map */

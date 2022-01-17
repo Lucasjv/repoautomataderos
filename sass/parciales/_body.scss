@@ -1,3 +1,12 @@
+/* Variables*/
+
+$color:  cadetblue;
+
+$estilos: (
+  color: #3673D9,
+  centro: center
+);
+
 
 .gradient{
     background: rgb(255,255,255);
@@ -13,7 +22,12 @@
     
 }
 
-
+.h2ok{
+    background-color: map-get($estilos, color);
+    text-align: map-get($estilos, centro);
+    padding: 1rem;
+    color: white;
+}
 
 
 .inline{
@@ -49,6 +63,6 @@
 
 
 .aside{
-    background-color: cadetblue;
+    background-color: $color;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

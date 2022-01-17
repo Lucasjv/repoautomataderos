@@ -5,6 +5,8 @@
           box-sizing: border-box;
 }
 
+/* Variables*/
+/*--------*/
 .gradient {
   background: white;
   background: linear-gradient(128deg, white 27%, #b2b3ff 52%, #0001ff 97%);
@@ -13,6 +15,13 @@
 
 .h1 {
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.h2ok {
+  background-color: #3673D9;
+  text-align: center;
+  padding: 1rem;
+  color: white;
 }
 
 .inline {
@@ -177,10 +186,6 @@
   -webkit-text-decoration-style: solid;
           text-decoration-style: solid;
   text-anchor: start;
-}
-
-.sensores {
-  background-color: darkgray;
 }
 
 .form {

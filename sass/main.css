@@ -115,8 +115,16 @@
 }
 
 .Servicios__detalle {
-  text-align: center;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
+  background-color: darkgray;
+  text-align: center;
+  text-justify: auto;
+  border: solid;
+  border-color: blue;
 }
 
 .publi {
@@ -146,8 +154,11 @@
 }
 
 .beneficios {
-  line-height: 20px;
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
   background-color: darkgray;
+  text-align: center;
   text-justify: auto;
   border: solid;
   border-color: blue;
@@ -158,14 +169,8 @@
           text-decoration-line: underline;
 }
 
-.links {
-  border: darkslategrey;
-}
-
-.links__item {
-  -webkit-text-decoration-color: blue;
-          text-decoration-color: blue;
-  background-color: cornflowerblue;
+.anchor {
+  color: white;
 }
 
 .accedetail {
@@ -217,6 +222,18 @@
   gap: 10px 10px;
   -ms-grid-column-align: center;
       justify-self: center;
+}
+
+.workingman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 25%;
+  width: 50%;
 }
 
 .scale-up-center {
@@ -292,6 +309,7 @@
   .workingman {
     width: 400px;
     height: 250px;
+    margin-left: 0%;
   }
   .acceimg {
     display: -ms-grid;

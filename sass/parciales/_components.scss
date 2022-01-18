@@ -1,4 +1,9 @@
-
+@mixin mixin1 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 
 .contact{
@@ -13,11 +18,10 @@
 
     .mecanico{
 
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-        width: 50%;
+     @include mixin1
     }
+
+
 .Servicios{
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -45,10 +49,8 @@ font-size: 25px;
 }
 
 .publi{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  
+    @include mixin1
 }
     
 

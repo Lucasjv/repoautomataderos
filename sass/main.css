@@ -5,8 +5,6 @@
           box-sizing: border-box;
 }
 
-/* Variables*/
-/*--------*/
 .gradient {
   background: white;
   background: linear-gradient(128deg, white 27%, #b2b3ff 52%, #0001ff 97%);

@@ -11,6 +11,7 @@
 }
 
 .nuestrotaller{
+    text-align: center;
     text-decoration: blue;
     background-color: darkgray;
     font-size: 2rem;
@@ -20,6 +21,12 @@
     .mecanico{
 
      @include mixin1
+    }
+
+    .mediaq{
+        
+        width: 250px;
+        height: 300px;
     }
 
 
@@ -116,6 +123,11 @@ text-align: start;
     }
 }
 
+.scam{
+    margin-left: 28%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
 
 .info{
     background-color: aquamarine;
@@ -126,6 +138,10 @@ text-align: start;
 
 
 .form{
+    border: solid;
+    margin-right: 40%;
+    margin-left: 35%;
+    margin-bottom: 20px;
     background-color: lightgrey;
 }
 
@@ -159,4 +175,12 @@ text-align: start;
     align-items: center;
     margin-left: 25%;
       width: 50%;
+}
+
+.workingguy{
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    margin-left: 30%;
+      width: 37%;
 }

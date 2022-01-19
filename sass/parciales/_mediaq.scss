@@ -13,9 +13,15 @@
         left: 250px;
     }
 
-  
+
+.mediaq{
+    width: 200px;
+    height: 300px;
+}
+
+
     .maps{
-       width: 250px; height: 400px;
+       width: 374px; height: 350px;
     }
 
   .mecanico{
@@ -40,7 +46,7 @@
     display: grid; 
     grid-template-columns: 1fr;
     grid-template-rows: 1fr; 
-    justify-self: center
+    justify-self: center;
 }
 
 .workingman{
@@ -57,11 +63,20 @@
     gap: 10px;
 }
 .scam{
-    width: 400px; height: 250px;
+    margin-left: 13px;
+    width: 350px; height: 200px;
 }
 .workingguy{
-    width: 400px; height: 250px;
+    margin-left: 10px;
+    width: 350px; height: 230px;
 }
+
+.form{
+    margin-right: 15%;
+    margin-left: 15%;
+}
+
+
 .Servicios{
     font-size: 12px;
     display: grid; 

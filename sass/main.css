@@ -83,6 +83,7 @@
 }
 
 .nuestrotaller {
+  text-align: center;
   -webkit-text-decoration: blue;
           text-decoration: blue;
   background-color: darkgray;
@@ -94,6 +95,11 @@
   margin-left: auto;
   margin-right: auto;
   width: 50%;
+}
+
+.mediaq {
+  width: 250px;
+  height: 300px;
 }
 
 .Servicios {
@@ -184,6 +190,12 @@
           text-decoration-line: underline;
 }
 
+.scam {
+  margin-left: 28%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .info {
   background-color: aquamarine;
   -webkit-text-decoration-style: solid;
@@ -192,6 +204,10 @@
 }
 
 .form {
+  border: solid;
+  margin-right: 40%;
+  margin-left: 35%;
+  margin-bottom: 20px;
   background-color: lightgrey;
 }
 
@@ -236,6 +252,18 @@
   width: 50%;
 }
 
+.workingguy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 30%;
+  width: 37%;
+}
+
 .scale-up-center {
   -webkit-animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   animation: scale-up-center 0.4s cubic-bezier(0.39, 0.575, 0.565, 1) both;
@@ -273,9 +301,13 @@
     bottom: 15px;
     left: 250px;
   }
+  .mediaq {
+    width: 200px;
+    height: 300px;
+  }
   .maps {
-    width: 250px;
-    height: 400px;
+    width: 374px;
+    height: 350px;
   }
   .mecanico {
     width: 300px;
@@ -323,12 +355,18 @@
     gap: 10px;
   }
   .scam {
-    width: 400px;
-    height: 250px;
+    margin-left: 13px;
+    width: 350px;
+    height: 200px;
   }
   .workingguy {
-    width: 400px;
-    height: 250px;
+    margin-left: 10px;
+    width: 350px;
+    height: 230px;
+  }
+  .form {
+    margin-right: 15%;
+    margin-left: 15%;
   }
   .Servicios {
     font-size: 12px;

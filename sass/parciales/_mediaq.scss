@@ -50,7 +50,7 @@
 }
 
 .workingman{
-    width: 400px; height: 250px;
+    width: 350px; height: 200px;
     margin-left: 0%;
 }
 
@@ -77,15 +77,16 @@
 }
 
 
-.Servicios{
+.servicios{
     font-size: 12px;
     display: grid; 
     grid-template-columns: 1fr; 
     grid-template-rows: 1fr;
     gap: 10px 10px; 
 }
-.Servicios__detalle{
+.servicios__detalle{
     font-size: 15px;
 
 }
 }
+

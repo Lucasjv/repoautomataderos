@@ -102,7 +102,7 @@
   height: 300px;
 }
 
-.Servicios {
+.servicios {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr;
@@ -114,13 +114,13 @@
   font-size: 25px;
 }
 
-.Servicios__medidas {
+.servicios__medidas {
   text-align: center;
   border: aliceblue;
   margin: 5px 5px 5px 5px;
 }
 
-.Servicios__detalle {
+.servicios__detalle {
   margin-top: 20px;
   margin-left: 20px;
   margin-right: 20px;
@@ -339,10 +339,11 @@
         justify-self: center;
   }
   .workingman {
-    width: 400px;
-    height: 250px;
+    width: 350px;
+    height: 200px;
     margin-left: 0%;
   }
+
   .acceimg {
     display: -ms-grid;
     display: grid;
@@ -368,7 +369,7 @@
     margin-right: 15%;
     margin-left: 15%;
   }
-  .Servicios {
+  .servicios {
     font-size: 12px;
     display: -ms-grid;
     display: grid;
@@ -378,7 +379,7 @@
         grid-template-rows: 1fr;
     gap: 10px 10px;
   }
-  .Servicios__detalle {
+  .servicios__detalle {
     font-size: 15px;
   }
 }

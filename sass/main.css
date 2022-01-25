@@ -306,8 +306,9 @@
     height: 300px;
   }
   .maps {
-    width: 373px;
-    height: 350px;
+    margin-left: 10px;
+    width: 300px;
+    height: 250px;
   }
   .mecanico {
     width: 300px;
@@ -339,7 +340,7 @@
         justify-self: center;
   }
   .workingman {
-    width: 350px;
+    width: 300px;
     height: 200px;
     margin-left: 0%;
   }
@@ -356,13 +357,13 @@
     gap: 10px;
   }
   .scam {
-    margin-left: 13px;
-    width: 350px;
+    margin-left: 20px;
+    width: 300px;
     height: 200px;
   }
   .workingguy {
-    margin-left: 10px;
-    width: 350px;
+    margin-left: 25px;
+    width: 300px;
     height: 230px;
   }
   .form {

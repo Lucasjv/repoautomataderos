@@ -1,41 +1,26 @@
-function saludar ()
-{alert ("Gracias por visitar nuestra página, recuerde que nuestros horarios de atención son de 8 a 13hs y 14 a 18hs, teléfono 4683-7070")}
 
-let nombre = prompt ("Ingrese por favor su nombre y apellido")
-{ 
-    alert ("Bienvenido " + nombre);
-    console.log (nombre)
-}
+let nombre = prompt ("ingrese su nombre y apellido")
 
-const claveOk = 1234
+{ alert ("Bienvenido " + nombre)
 
-let clave = parseInt(prompt ("Ingrese su clave"))
+console.log (nombre)};
 
-if ( clave === claveOk)
-{alert ("Ingreso Exitoso");
-}
-else { alert ("ingreso no exitoso"); 
-}
+const claveIngresada = prompt ("Ingrese su clave por favor")
+
+const clave = "1234"
+
+if (clave === claveIngresada)
+
+{ alert ("Ingreso exitoso") }
+
+else { alert ("Ingreso no exitoso")
+};
 
 
-if  (isNaN(clave)) { alert ("Su clave solo debe ser numérica");}
+let numero = parseInt(prompt("ingrese un número"))
 
-saludar ()
 
-let fecha = prompt ("Ingrese qué día de la semana desea solicitar turno")
-{ console.log (fecha)}
+for (let contador = 0; contador<=numero; contador++)
+{
+console.log(contador);}
 
-let turnos = parseInt(prompt("Ingrese la cantidad de vehículos que quiera traer"))
-
-let disponibles = "20";
-
-if (turnos <= disponibles )
-{ alert ("¡turno confirmado con éxito! Complete el formulario de contacto y nos estaremos comunicando a la brevedad");}
-else { alert (" No quedan turnos para esta semana");}
-
-saludar ()
-
-//*turnos que quedan disponibles por día*//
-
-for (let i = turnos ; i<=disponibles ; i++)
-{console.log (i);}

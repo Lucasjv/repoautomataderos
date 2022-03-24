@@ -33,7 +33,6 @@ if (turnos <= disponibles )
 { alert ("¡turno confirmado con éxito! Complete el formulario de contacto y nos estaremos comunicando a la brevedad");}
 else { alert (" No quedan turnos para esta semana");}
 
-saludar ()
 
 //*turnos que quedan disponibles por día*//
 
@@ -61,6 +60,7 @@ else
 
 {
     alert ("Su vehículo ya ha sido discontinuado por fábrica y no disponemos de equipamiento")
+    saludar ()
 };
 
 

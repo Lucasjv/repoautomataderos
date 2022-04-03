@@ -1,4 +1,3 @@
-
 function saludar ()
 {alert ("Gracias por visitar nuestra página, recuerde que nuestros horarios de atención son de 8 a 13hs y 14 a 18hs, teléfono 4683-7070")}
  
@@ -89,4 +88,3 @@ console.log(sensores)
 console.log(camara)
 console.log(chapon)
 console.log(alarma)
- 

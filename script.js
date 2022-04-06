@@ -7,6 +7,9 @@ let nombre = prompt ("Ingrese por favor su nombre y apellido")
     console.log (nombre)
 }
  
+
+//*definiendo clave *//
+
 const claveOk = 1234
  
 let clave = parseInt(prompt ("Ingrese su clave"))
@@ -19,6 +22,10 @@ else { alert ("ingreso no exitoso");
  
  
 if  (isNaN(clave)) { alert ("Su clave solo debe ser numérica");}
+
+
+//** DÍA DE TURNO Y CANTIDAD DE VEHÍCULOS**//
+
  
  
 let fecha = prompt ("Ingrese qué día de la semana desea solicitar turno")
@@ -33,6 +40,8 @@ if (turnos <= disponibles )
 else { alert (" No quedan turnos para esta semana");}
  
 saludar ()
+
+
  
 //*turnos que quedan disponibles por día*//
  
@@ -40,9 +49,10 @@ for (let i = turnos ; i<=disponibles ; i++)
 {console.log (i);}
  
  
+//**Vehículos que trabajamos* *//
  
  
-const vehiculos = ["ka 2017", "Ranger", "focusiv", "fiesta", "Ecosport", "mondeo", "bronco", "maverik", "territory", "Transit"];
+const vehiculos = ["ka 2017", "Ranger", "focusiv", "fiesta", "Ecosport", "mondeo", "bronco", "maverik", "territory", "Transit", "Kuga"];
  
 vehiculos.forEach((vehiculo)=> { console.log("Vehículo habilitado", vehiculo); })
  

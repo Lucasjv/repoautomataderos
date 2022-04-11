@@ -4,11 +4,13 @@
 plantilla ()
 function plantilla()
 {
-    let name = prompt ("ingresa tu nombre")
+    let name = prompt ("ingresa tu nombre de usuario")
     const contenedor = document.getElementById("carritoname")
 
     contenedor.innerText = ` Bienvenido ${name} al carrito de compras`
 }
+
+localStorage.setItem("Mi_llave", plantilla)
 
 const accesorios = [
 
@@ -28,7 +30,9 @@ newcontenedor.innerHTML= `<h3> Producto: ${accesorio.nombre} </h3>
 <p> $: ${accesorio.precio} </p>
 `;
 
-document.body.appendChild(newcontenedor);
+const equipament = document.getElementById("shop")
+
+equipament.append(newcontenedor);
 
 
 }

@@ -1,3 +1,4 @@
+//** EN SECCIÓN EQUIPAMIENTO ++//
 
 
   const nodobtn = document.querySelector("#btnon")

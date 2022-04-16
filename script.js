@@ -74,27 +74,3 @@ else
 };
  
  
-function Producto (nombre, precio, mo, promo)
- 
-{
- 
-    this.nombre= nombre
-    this.precio= precio
-    this.mo= mo
-    this.promo= promo
- 
- 
-}
- 
- 
-const tuercas = new Producto ("Tuercas de seguridad", 9600, 0, false)
-const sensores = new Producto ("Sensor de estacionamiento sonoro", 9600, 4200, false)
-const camara = new Producto ("camara de retroceso", 10200, 3500, false)
-const chapon = new Producto ("chapon protector de carter y caja", 13500, 0, true)
-const alarma = new Producto ("Alarma volumétrica", 12500, 2800, false)
- 
-console.log(tuercas)
-console.log(sensores)
-console.log(camara)
-console.log(chapon)
-console.log(alarma)

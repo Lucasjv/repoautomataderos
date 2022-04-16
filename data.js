@@ -19,7 +19,8 @@ function mostrarMenu()
      myBtn.setAttribute("class", "styledBtn");
      myBtn.innerHTML=categoria.nombre;
      myBtn.addEventListener("click", ()=>mostrarProductos(categoria.id));
-     document.body.appendChild(myBtn);
+     let misproductos = document.getElementById("misproductos")
+     misproductos.appendChild(myBtn);
    })
 }
 
@@ -27,13 +28,16 @@ function escribirMensaje()
 {
   const nodoMensaje = document.createElement("p");
   nodoMensaje.innerHTML= "Por favor, selecciona tu vehículo para continuar:";
-  document.body.appendChild(nodoMensaje);
-}
 
+let elnodo = document.getElementById("elnodo")
+elnodo.appendChild(nodoMensaje);
+
+}
 
 function mostrarProductos(idCategoria)
 {
     
+
   const productosFiltrados = filtrarProductos(idCategoria);
   let cadena ='';
   productosFiltrados.forEach((element)=>{
@@ -43,8 +47,8 @@ function mostrarProductos(idCategoria)
     
     </div>`
 
-    document.getElementById("#shop").innerHTML=cadena;
-  });
+    document.querySelector("#Productos").innerHTML=cadena;
+});
 
 
 

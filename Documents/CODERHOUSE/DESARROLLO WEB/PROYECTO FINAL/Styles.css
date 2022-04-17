@@ -1,0 +1,290 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+header{
+    background: rgb(2,0,36);
+background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
+background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(82,82,136,1) 24%, rgba(33,160,207,1) 64%, rgba(0,212,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    padding: 0px 25px 10px 0px;
+    border: solid 2px blue
+
+}
+
+.header__item{
+    list-style: none;
+
+}
+
+h1{
+    color: blue;
+    
+}
+
+
+.logoam{
+    background-color: blue;
+}
+
+.inline{
+    display: flex;
+    position: sticky;
+}
+
+
+
+.header__menu{ 
+  
+    display: flex;
+    gap: 30px;
+    background-color: cadetblue;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    
+}
+
+
+
+
+.imagen{
+    position: relative;
+  
+
+}
+
+.imagen--titular{
+    position: absolute;
+    bottom: 15px;
+    left: 300px;
+}
+
+
+main{
+
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.garantia{
+    text-transform: capitalize;
+    background-color: aliceblue;
+    font-size: 15px;
+    font-style: italic;
+}
+
+aside{
+    background-color: darkgrey;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+footer{
+    background-color: aliceblue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.footer__item{
+   background-color: darkgray; 
+    padding: 5px 25px 10px 25px;
+    
+}
+
+.contact{
+    background-color: cadetblue;
+}
+
+.NuestroTaller{
+    text-decoration: blue;
+    font-size: 2rem;
+    }
+
+.Servicios{
+    background-color: darkgray;
+font-size: 25px;
+}
+
+.Servicios__medidas {
+    position: relative;
+    border: aliceblue;
+    margin: 5px 5px 5px 5px;
+}
+
+.Servicios__detalle{
+    font-size: 25px;
+
+}
+
+.publi{
+    background-color: cadetblue;
+}
+
+.loquehacemos{
+    border: solid;
+    background-color: darkgray;
+}
+
+.chapa{
+    position: absolute;
+    text-orientation: sideways-right;
+    background-color: aliceblue;
+    text-decoration-line: underline;
+}
+
+.beneficios{
+    line-height: 20px;
+    background-color: darkgray;
+    text-justify: auto;
+    border: solid;
+    border-color: blue;
+
+}
+
+.prices{
+    text-decoration-line: underline;
+}
+
+.links{
+    border: darkslategrey;
+}
+
+.links__item{
+    text-decoration-color: blue;
+    background-color: cornflowerblue;
+}
+
+
+.accedetail{
+    border: solid;
+    background-color: aliceblue;
+}
+
+.accedetail__title{
+    background-color: darkgray;
+    text-decoration-line: underline;
+}
+
+.info{
+    background-color: aquamarine;
+    text-decoration-style: solid;
+    text-anchor: start;
+}
+
+.sensores{
+    background-color: darkgray;
+}
+
+.form{
+    background-color: lightgrey;
+}
+
+.main__subtitle{
+   
+    position: relative;
+    background-color: lightgrey;
+}
+
+.acceimg{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-auto-flow: dense;
+    gap: 10px;
+}
+
+.Servicios{
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px; 
+}
+
+.imgfedpat{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 10px 10px; 
+    justify-self: center
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .imagen--maverick{
+        width: 200px; height: 100px;
+      
+    } 
+    .imagen--titular{
+    
+        size: 25px;
+        bottom: 15px;
+        left: 250px;
+    }
+
+    .footer__logam{
+        width: 300px; height: 100px;
+    }
+    .maps{
+       width: 250px; height: 250px;
+    }
+
+  .mecanico{
+      width: 300px; height: 250px;
+  }
+  .Servicios{
+    display: grid; 
+   
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px; 
+}
+
+.publi{
+    width: 250px; height: 150px;
+}
+
+.imgfedpat{
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; 
+    justify-self: center
+}
+
+.workingman{
+    width: 400px; height: 250px;
+}
+
+.acceimg{
+    display: grid; 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr; 
+    gap: 10px 10px; 
+    grid-auto-flow: dense;
+    gap: 10px;
+}
+.scam{
+    width: 400px; height: 250px;
+}
+.workingguy{
+    width: 400px; height: 250px;
+}
+.Servicios{
+    font-size: 12px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr;
+    gap: 10px 10px; 
+}
+.Servicios__detalle{
+    font-size: 15px;
+
+}
+}

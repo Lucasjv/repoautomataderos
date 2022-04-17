@@ -1,3 +1,7 @@
+miCarrito= new Carrito([]);
+
+
+
 function init(){
     escribirBienvenida();
     mostrarMenu();
@@ -44,8 +48,11 @@ function mostrarProductos(idCategoria)
     cadena+=`<div>
     Equipamiento: ${element.nombre}<br>
     Precio : ${element.precio}<br>
-    
-    </div>`
+
+    </div>
+    <div class="productBtn">
+    ${getProductButton(productos)}
+  </div>`
 
     document.querySelector("#Productos").innerHTML=cadena;
 });
@@ -60,3 +67,19 @@ function filtrarProductos(idCategoria)
     return productos.filter(producto=>producto.categoria===idCategoria);
 
 }
+
+function getProductButton(productos)
+{
+    if(productos.stock<0)
+    {
+      return `<button class="styledBtn" onclick="agregarAlCarrito">Agregar al Carrito</button>`
+    }
+
+    else{
+      return `<button class="notBuyBtn">No disponible</button>`;
+ 
+    }
+
+    console.log(productos)
+}
+

@@ -5,21 +5,56 @@ function iniciar()
 {
   
   enviandoformulario()
+  cancelandoformulario()
+  tosti()
 }
 
 function saludarConSweet()
  {
    Swal.fire ({
      title: "Formulario enviado con éxito",
-     icon: 'Waring',
+     icon: 'success',
      confirmButtonText: 'MUCHAS GRACIAS'
    })
  }
 
  function enviandoformulario()
  {
-   const btn = document.getElementById("formulario");
-   btn.addEventListener("submit", ()=>saludarConSweet())
+   let btn = document.getElementById("btnon");
+   btn.addEventListener("click", ()=>saludarConSweet())
  }
 
- 
+
+ function CancelarConSweet()
+ {
+   Swal.fire ({
+     title: "Vuelva a cargar los datos",
+     icon: 'Warning',
+     confirmButtonText: 'MUCHAS GRACIAS'
+   })
+ }
+
+ function cancelandoformulario()
+ {
+   let btn = document.getElementById("btnreset");
+   btn.addEventListener("click", ()=>CancelarConSweet())
+}
+
+
+function tosti()
+
+{
+
+  let btn = document.getElementById("btnreset");
+  
+   btn.addEventListener("click", ()=> {
+     
+    Toastify({
+
+    text: "Botón inhabilitado",
+    
+    duration: 3000,
+    
+    }).showToast();
+     })
+    }

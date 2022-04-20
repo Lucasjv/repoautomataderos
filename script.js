@@ -1,3 +1,11 @@
+function consweet()
+{
+    confirmarConSweet()
+    negarConSweet()
+
+}
+
+
 function confirmarConSweet()
 {
 
@@ -37,7 +45,7 @@ const claveOk = 1234
  
 let clave = parseInt(prompt ("Ingrese su clave"))
  
- clave === claveOk ? alert ("Ingreso Exitoso") : alert ("ingreso no exitoso");
+ clave === claveOk ? confirmarConSweet() : negarConSweet();
  
 if  (isNaN(clave)) { alert ("Su clave solo debe ser numérica");}
 
@@ -83,15 +91,8 @@ let modelo = prompt ("Ingrese el modelo de su vehículo para conocer si disponem
 
 const indice = vehiculos.indexOf(modelo);
  
+
  
-if (indice!==-1)
- 
-{
-   confirmarConSweet()
-}
- 
-else
- 
-{
-    negarConSweet()
-};
+indice !==-1 ? alert (`Disponemos de equipamiento y repuestos para su ${vehiculos[indice]}`)  :  alert ("Su vehículo ya ha sido discontinuado por fábrica y no disponemos de equipamiento");
+
+

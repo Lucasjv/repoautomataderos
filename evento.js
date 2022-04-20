@@ -1,21 +1,23 @@
 //** EN SECCIÓN EQUIPAMIENTO ++//
 
 
-  const nodobtn = document.querySelector("#btnon")
-
-  nodobtn.addEventListener("click", ()=>alert ("Formulario enviado")
-  
-  );
-
-  const nodoreset = document.getElementById("btnreset")
-
-  nodoreset.addEventListener("mouseover", ()=> {
-      console.log("El usuario no ha enviado sus datos")
-      
-  });
-
-  const nodoFormulario = document.getElementById("formulario")
-nodoFormulario.addEventListener("subit", ()=>
+function iniciar()
 {
-    alert ("formulario enviado con éxito")
-})
+  
+  enviandoformulario()
+}
+
+function saludarConSweet()
+ {
+   Swal.fire ({
+     title: "Formulario enviado con éxito",
+     icon: 'Waring',
+     confirmButtonText: 'MUCHAS GRACIAS'
+   })
+ }
+
+ function enviandoformulario()
+ {
+   const btn = document.getElementById("formulario");
+   btn.addEventListener("submit", ()=>saludarConSweet())
+ }

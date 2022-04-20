@@ -1,61 +1,81 @@
+const data = JSON.parse(localStorage.getItem("MI_CARRITO"));
 miCarrito= new Carrito([]);
+
+if(!miCarrito)
+{
+  miCarrito= new Carrito([]);
+}
+else{
+  miCarrito= new Carrito(data);
+}
+
 
 
 
 function init(){
-    escribirBienvenida();
-    mostrarMenu();
-    escribirMensaje();
+
+  mostrarMenu();
+  escribirMensaje();
 }
 
-function escribirBienvenida()
-{
-  const myH2 = document.createElement("h2");
-  myH2.innerHTML="TIENDA DE EQUIPAMIENTO OFICIAL";
-  document.body.appendChild(myH2);
 
-}
 
 function mostrarMenu()
 {
-   categorias.forEach((categoria)=>{
-     const myBtn = document.createElement("button");
-     myBtn.setAttribute("class", "styledBtn");
-     myBtn.innerHTML=categoria.nombre;
-     myBtn.addEventListener("click", ()=>mostrarProductos(categoria.id));
-     let misproductos = document.getElementById("misproductos")
-     misproductos.appendChild(myBtn);
-   })
+ categorias.forEach((categoria)=>{
+   const myBtn = document.createElement("button");
+   myBtn.setAttribute("class", "styledBtn");
+   myBtn.innerHTML=categoria.nombre;
+   myBtn.addEventListener("click", ()=>mostrarProductos(categoria));
+   document.getElementById("misproductos").appendChild(myBtn);
+ })
 }
 
 function escribirMensaje()
 {
-  const nodoMensaje = document.createElement("p");
-  nodoMensaje.innerHTML= "Por favor, selecciona tu vehículo para continuar:";
-
-let elnodo = document.getElementById("elnodo")
-elnodo.appendChild(nodoMensaje);
-
+const nodoMensaje = document.createElement("p");
+nodoMensaje.setAttribute("id", "mainMessage");
+nodoMensaje.innerHTML= "Por favor, selecciona una categoría para continuar:";
+document.getElementById("nodoMensaje").appendChild(nodoMensaje);
 }
 
-function mostrarProductos(idCategoria)
+
+function mostrarProductos(categoria)
 {
-    
 
-  const productosFiltrados = filtrarProductos(idCategoria);
-  let cadena ='';
-  productosFiltrados.forEach((element)=>{
-    cadena+=`<div>
-    Equipamiento: ${element.nombre}<br>
-    Precio : ${element.precio}<br>
 
-    </div>
-    <div class="productBtn">
-    ${getProductButton(productos)}
-  </div>`
+document.querySelector("#mainMessage").innerHTML=`<h3>Productos en Categoría: ${categoria.nombre}</h3>`
+const productosFiltrados = filtrarProductos(categoria.id);
 
-    document.querySelector("#Productos").innerHTML=cadena;
+let contenedor = document.getElementById("mainContainer");
+if(contenedor===null)
+{
+  contenedor = document.createElement("div");
+  contenedor.setAttribute("id", "mainContainer");
+  document.body.appendChild(contenedor);
+}
+
+let nodoProductos = document.getElementById("productos");
+if(nodoProductos===null)
+{
+  nodoProductos = document.createElement("div");
+  nodoProductos.setAttribute("id", "productos");
+  contenedor.appendChild(nodoProductos);
+}
+else 
+{
+  nodoProductos.innerHTML="";
+}
+
+
+
+let cadena ='';
+productosFiltrados.forEach((element)=>{
+  cadena+=getProductInfo(element);
+  nodoProductos.innerHTML=cadena;
 });
+
+mostrarCarrito();
 
 
 
@@ -64,22 +84,85 @@ function mostrarProductos(idCategoria)
 function filtrarProductos(idCategoria)
 {
 
-    return productos.filter(producto=>producto.categoria===idCategoria);
+  return productos.filter(producto=>producto.categoria===idCategoria);
 
 }
 
-function getProductButton(productos)
+
+function getProductInfo(product)
 {
-    if(productos.stock<0)
-    {
-      return `<button class="styledBtn" onclick="agregarAlCarrito">Agregar al Carrito</button>`
-    }
+return `<div class="productWrapper">
+      <div class="mainProductInfo">
+     
+       
+        </div>
+        <div class="productInfo">
+          ${product.nombre}<br>
+          $${product.precio}
+        </div>
+        </div>
+        <div class="productBtn">
+          ${getProductButton(product)}
+        </div>
+        </div>`
 
-    else{
-      return `<button class="notBuyBtn">No disponible</button>`;
- 
-    }
 
-    console.log(productos)
 }
 
+function getProductButton(product)
+{
+  if(product.stock>0)
+  {
+    return `<button class="styledBtn" onclick="agregarAlCarrito(${product.id})">Agregar al Carrito</button>`
+  }
+  else{
+    return `<button class="notBuyBtn">No Disponible</button>`;
+  }
+}
+
+function agregarAlCarrito(productId)
+{
+let products = productos.map(el=>el.id);
+let index = products.findIndex(el=>el===productId);
+let product = productos[index];
+miCarrito.addProducto(product);
+actualizarCarrito();
+
+
+}
+
+function actualizarCarrito()
+{
+let contenedor = document.getElementById("carrito");
+contenedor.innerHTML="";
+let prods = miCarrito.productos;
+let nuevoContenedor=document.createElement("div");
+nuevoContenedor.setAttribute("style", "display:flex;flex-direction:column");
+prods.forEach(producto=>{
+  let nodoLi = document.createElement("div");
+  nodoLi.innerHTML=`${producto.nombre} - ${producto.precio}<br>`
+  nuevoContenedor.appendChild(nodoLi)
+  
+})
+
+contenedor.appendChild(nuevoContenedor);
+
+miCarrito.guardar();
+
+}
+
+function mostrarCarrito()
+{
+let contenedor = document.getElementById("mainContainer");
+let nodoCarrito = document.getElementById("carrito");
+if(nodoCarrito===null)
+{
+  nodoCarrito = document.createElement("div");
+  nodoCarrito.setAttribute("id", "carrito");
+  nodoCarrito.innerHTML="<h3>Su Carrito:</h3>";
+  contenedor.appendChild(nodoCarrito);
+}
+actualizarCarrito();
+
+
+}

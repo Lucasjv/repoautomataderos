@@ -11,15 +11,14 @@ let nombre = prompt ("Ingrese por favor su nombre y apellido")
 //*definiendo clave *//
 
 const claveOk = 1234
+
+//**OPTIMIZANDO CÓDIGO *//
  
 let clave = parseInt(prompt ("Ingrese su clave"))
  
-if ( clave === claveOk)
-{alert ("Ingreso Exitoso");
-}
-else { alert ("ingreso no exitoso");
-}
- 
+ clave === claveOk ? alert ("Ingreso Exitoso") : alert ("ingreso no exitoso");
+
+
  
 if  (isNaN(clave)) { alert ("Su clave solo debe ser numérica");}
 
@@ -32,12 +31,13 @@ let fecha = prompt ("Ingrese qué día de la semana desea solicitar turno")
 { console.log (fecha)}
  
 let turnos = parseInt(prompt("Ingrese la cantidad de vehículos que quiera traer"))
+
+//**OPTIMIZANDO CÓDIGO *//
  
 let disponibles = "20";
  
-if (turnos <= disponibles )
-{ alert ("¡turno confirmado con éxito! Complete el formulario de contacto y nos estaremos comunicando a la brevedad");}
-else { alert (" No quedan turnos para esta semana");}
+turnos <= disponibles ? 
+alert ("¡turno confirmado con éxito! Complete el formulario de contacto y nos estaremos comunicando a la brevedad") : alert (" No quedan turnos para esta semana");
  
 saludar ()
 
@@ -59,18 +59,10 @@ vehiculos.forEach((vehiculo)=> { console.log("Vehículo habilitado", vehiculo); 
  
 let modelo = prompt ("Ingrese el modelo de su vehículo para conocer si disponemos de equipamiento");
  
+
+//**OPTIMIZANDO CÓDIGO *//
+
 const indice = vehiculos.indexOf(modelo);
  
-if (indice!==-1)
  
-{
-    alert (`Disponemos de equipamiento y repuestos para su ${vehiculos[indice]}`)  
-}
- 
-else
- 
-{
-    alert ("Su vehículo ya ha sido discontinuado por fábrica y no disponemos de equipamiento")
-};
- 
- 
+ indice !==-1 ? alert (`Disponemos de equipamiento y repuestos para su ${vehiculos[indice]}`)  :  alert ("Su vehículo ya ha sido discontinuado por fábrica y no disponemos de equipamiento");

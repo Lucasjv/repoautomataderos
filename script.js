@@ -1,3 +1,24 @@
+function confirmarConSweet()
+{
+
+    Swal.fire ({
+        title: "Ingreso exitoso",
+        icon: 'success',
+        confirmButtonText: 'MUCHAS GRACIAS'
+      })
+
+}
+
+function negarConSweet()
+{
+    Swal.fire ({
+        title: "Vuelva a intentarlo",
+        icon: 'error',
+        confirmButtonText: 'MUCHAS GRACIAS'
+      })
+}
+
+
 function saludar ()
 {alert ("Gracias por visitar nuestra página, recuerde que nuestros horarios de atención son de 8 a 13hs y 14 a 18hs, teléfono 4683-7070")}
  
@@ -17,8 +38,6 @@ const claveOk = 1234
 let clave = parseInt(prompt ("Ingrese su clave"))
  
  clave === claveOk ? alert ("Ingreso Exitoso") : alert ("ingreso no exitoso");
-
-
  
 if  (isNaN(clave)) { alert ("Su clave solo debe ser numérica");}
 
@@ -65,4 +84,14 @@ let modelo = prompt ("Ingrese el modelo de su vehículo para conocer si disponem
 const indice = vehiculos.indexOf(modelo);
  
  
- indice !==-1 ? alert (`Disponemos de equipamiento y repuestos para su ${vehiculos[indice]}`)  :  alert ("Su vehículo ya ha sido discontinuado por fábrica y no disponemos de equipamiento");
+if (indice!==-1)
+ 
+{
+   confirmarConSweet()
+}
+ 
+else
+ 
+{
+    negarConSweet()
+};

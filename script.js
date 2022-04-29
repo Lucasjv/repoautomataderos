@@ -1,3 +1,5 @@
+//**APLICANDO LIBRERIAS */
+
 function consweet()
 {
     confirmarConSweet()
@@ -96,3 +98,35 @@ const indice = vehiculos.indexOf(modelo);
 indice !==-1 ? alert (`Disponemos de equipamiento y repuestos para su ${vehiculos[indice]}`)  :  alert ("Su vehículo ya ha sido discontinuado por fábrica y no disponemos de equipamiento");
 
 
+//*API*//
+
+fetch ("https://www.dolarsi.com/api/api.php?type=valoresprincipales")
+.then((resp)=> resp.json())
+.then((data) => {
+    console.log(data);
+    console.log("Valor compra ", data[1].casa.compra);
+    console.log("Valor venta ", data[1].casa.venta)
+
+
+    mostrarDolar (data)
+    
+})
+
+function mostrarDolar (data)
+{
+
+    const nodoDolar = document.querySelector("#dolares") 
+
+
+    data.forEach(element => {
+    const contenedor = document.createElement("li")
+
+    contenedor.innerHTML =  `<h3>"Valor Compra ", ${element.casa.compra}</h3> 
+ 
+   <h3>"Valor Venta ",${ element.casa.venta}</h3> ` 
+
+nodoDolar.appendChild(contenedor);
+
+});
+
+}

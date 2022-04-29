@@ -1,5 +1,7 @@
 //** EN SECCIÓN EQUIPAMIENTO ++//
 
+//**APLICANDO LIBRERIAS */
+
 
 function iniciar()
 {

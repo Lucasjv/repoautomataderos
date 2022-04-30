@@ -1,7 +1,7 @@
 const productos = [
 
 
-    {id:01, nombre: "Chapon protector de carter y caja", precio: 10200, categoria: 1, stock:10 },
+    {id:01, nombre: "Chapon protector de carter y caja (ka)", precio: 10200, categoria: 1, stock:10 },
     {id:02, nombre: "Tuercas de seguridad", precio: 10500, categoria: 1, stock: 10 },
     {id:03, nombre: "Sensor de estacionamiento sonoro", precio: 13200, categoria: 1, stock:10 },
     {id:04, nombre: "Cámara retroceso", precio: 12300, categoria: 1, stock:10 },
@@ -18,7 +18,7 @@ const productos = [
     {id:11, nombre: "Cobertor de caja", precio: 44600, categoria: 2, stock:10 },
     {id:12, nombre: "Sensor de estacionamiento sonoro", precio: 15300, categoria: 2, stock:10 },
  
-    {id:13, nombre: "Chapon protector de carter y caja",  precio: 10200, categoria: 4, stock:10},
+    {id:13, nombre: "Chapon protector de carter y caja (Fiesta)",  precio: 10200, categoria: 4, stock:10},
     {id:14, nombre: "Tuercas de seguridad", precio: 10500, categoria: 4, stock: 10 },
     {id:15, nombre: "Sensor de estacionamiento sonoro", precio: 13200, categoria: 4, stock:10 },
     {id:16, nombre: "Cámara retroceso", precio: 12300, categoria: 4, stock:10 },
@@ -27,7 +27,7 @@ const productos = [
     {id:17, nombre: "Tuercas de seguridad", precio: 5900, categoria: 6, stock:10 },
 
 
-   {id:18, nombre: "Chapon protector de carter y caja", precio: 10200, categoria: 3, stock: 10 },
+   {id:18, nombre: "Chapon protector de carter y caja (Eco)", precio: 13200, categoria: 3, stock: 10 },
    {id:19, nombre: "Sensor de estacionamiento sonoro", precio: 15300, categoria: 3, stock: 10 },
    {id:20, nombre: "Cámara retroceso", precio: 12300, categoria: 3, stock: 10  },
    {id:21, nombre: "Cobertor de rueda de auxilio pintado al tono carrocería", precio: 33500, categoria: 3, stock: 10 },

@@ -1,14 +1,17 @@
 const data = JSON.parse(localStorage.getItem("MI_CARRITO"));
-miCarrito= new Carrito([]);
-
+miCarrito= new Carrito ([]);
+  
 if(!miCarrito)
-{
-  miCarrito= new Carrito([]);
-}
-else{
-  miCarrito= new Carrito(data);
-}
 
+  {
+ miCarrito= new Carrito ([]);
+
+
+  }
+
+  else{
+    miCarrito= new Carrito(data);
+  }
 
 
 
@@ -116,18 +119,18 @@ function getProductButton(product)
     return `<button class="styledBtn" onclick="agregarAlCarrito(${product.id})">Agregar al Carrito</button>`
   }
   else{
-    return `<button class="notBuyBtn">No Disponible</button>`;
+    return `<button class="notBuyBtn">No hay stock</button>`;
   }
 }
 
-function agregarAlCarrito(productId)
+function agregarAlCarrito(productoOk)
 {
 let products = productos.map(el=>el.id);
-let index = products.findIndex(el=>el===productId);
+let index = products.findIndex(el=>el===productoOk);
 let product = productos[index];
 miCarrito.addProducto(product);
-actualizarCarrito();
 
+actualizarCarrito()
 
 }
 
@@ -136,8 +139,11 @@ function actualizarCarrito()
 let contenedor = document.getElementById("carrito");
 contenedor.innerHTML="";
 let prods = miCarrito.productos;
+
 let nuevoContenedor=document.createElement("div");
+
 nuevoContenedor.setAttribute("style", "display:flex;flex-direction:column");
+
 prods.forEach(producto=>{
   let nodoLi = document.createElement("div");
   nodoLi.innerHTML=`${producto.nombre} - ${producto.precio}<br>`

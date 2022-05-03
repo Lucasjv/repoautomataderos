@@ -1,7 +1,7 @@
 const productos = [
 
 
-    {id:01, nombre: "Chapon protector de carter y caja (ka)", precio: 10200, categoria: 1, stock:10 },
+    {id:01, nombre: "Chapon protector de carter y caja (ka)", precio: 10200, categoria: 1, stock:10, },
     {id:02, nombre: "Tuercas de seguridad", precio: 10500, categoria: 1, stock: 10 },
     {id:03, nombre: "Sensor de estacionamiento sonoro", precio: 13200, categoria: 1, stock:10 },
     {id:04, nombre: "Cámara retroceso", precio: 12300, categoria: 1, stock:10 },

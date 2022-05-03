@@ -1,6 +1,6 @@
 
 
-//+
+//+CARRITO DE COMPRAS+//
 
 
 class Carrito{
@@ -14,6 +14,8 @@ class Carrito{
     {   
     
        this.productos.push(producto);
+
+    
    
     }
 

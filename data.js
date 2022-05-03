@@ -17,8 +17,6 @@ else {
 
 
 
-console.log(miCarrito.productos.reduce((acc, element)=>acc+=element.precio,0));
-
 
 
 

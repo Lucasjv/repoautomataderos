@@ -4,7 +4,24 @@
 const datos = JSON.parse(localStorage.getItem("MI_CARRITO"));
 miCarrito= new Carrito ([]);
 
+if (!miCarrito) {
 
+  miCarrito = new Carrito([]);
+  
+  }
+  
+  else {
+    miCarrito= new Carrito (datos);
+  
+  }
+  
+  
+  
+  
+  console.log(miCarrito.productos.reduce((acc, element)=>acc+=element.precio,0));
+  
+  
+  
 
 
 function init(){

@@ -4,21 +4,6 @@
 const datos = JSON.parse(localStorage.getItem("MI_CARRITO"));
 miCarrito= new Carrito ([]);
 
-if (!miCarrito) {
-
-miCarrito = new Carrito([]);
-
-}
-
-else {
-  miCarrito= new Carrito (datos);
-
-}
-
-
-
-
-
 
 
 
